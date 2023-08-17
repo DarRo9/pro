@@ -6,6 +6,7 @@ import (
 )
 
 type Server struct {
+	DelAccServer
 }
 
 func (s *Server) Do(ctx context.Context, in *Response) (*Response, error) {
