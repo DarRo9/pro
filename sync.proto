@@ -1,0 +1,15 @@
+syntax = "proto3";
+package proto;
+option go_package = "./proto";
+
+service DelAcc {
+    rpc Do(Request) returns (Response) {}
+}
+
+message Request {
+    string message = 1;
+}
+
+message Response {
+    string message = 1;
+}
